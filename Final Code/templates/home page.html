@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.0/js/all.js"></script>
+    <title>Home</title>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "e39c6f9f-46b6-430a-b0b7-2ee7110cc096", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "dd6273a7-70d2-4b96-8476-e8a2bf3a6067", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+body {
+  background-color: rgb(14, 0, 0);
+}
+.box1 {
+  border: 1px solid black;
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  margin-top: -10px;
+  position: sticky;
+}
+ul {
+  float: left;
+  color: white;
+}
+ul li {
+  margin-top: -10x;
+  float: left;
+  position: relative;
+  left: 1000px;
+  width: 100px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover {
+  border-bottom: 2.5px solid red;
+  transform: scale(2.5);
+}
+ul li i {
+  padding-left: 5px;
+}
+h5 {
+  font-size: larger;
+  margin-top: -12x;
+  float: right;
+  position: relative;
+  color: white;
+  right: 90px;
+  margin: 1px;
+  margin-left: -150px;
+  text-transform: uppercase;
+}
+.sub-box {
+  border: 1px solid transparent;
+  background-color: whitesmoke;
+  height: 50px;
+}
+ol {
+  float: left;
+}
+ol li {
+  float: left;
+  width: 100px;
+  position: relative;
+  left: -10%;
+  list-style-type: none;
+  font-family: condensed, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+}
+ol li a {
+  text-decoration: none;
+  color: black;
+}
+ol li a:hover {
+  border-bottom: 4px solid rgba(46, 160, 216, 0.822);
+}
+.fa-search {
+  position: absolute;
+  left: 85%;
+  top: 10%;
+  color: black;
+}
+.fa-search:hover {
+  transform: scale(1.2);
+}
+.fa-user {
+  position: absolute;
+  left: 88%;
+  top: 10%;
+  color: black;
+}
+.fa-user:hover {
+  transform: scale(1.2);
+}
+.fa-shopping-cart {
+  position: absolute;
+  left: 91%;
+  top: 10%;
+  color: black;
+}
+.fa-shopping-cart:hover {
+  transform: scale(1.2);
+}
+h2 {
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 5000;
+  text-transform: uppercase;
+  margin-top: -40px;
+  margin-left: 10%;
+  color: black;
+  background: linear-gradient(150deg red);
+}
+font {
+  margin-left: 8px;
+  color: red;
+}
+.logo {
+  position: absolute;
+  margin: -50px 20px;
+}
+.social-media {
+  position: absolute;
+  height: 1654px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.social-media::before {
+  margin-left: 2850px;
+  border: 2px solid white;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 35%;
+  background: white;
+  top: 2%;
+}
+.social-media::after {
+  margin-left: 2850px;
+  border: 2px solid white;
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 35%;
+  background: white;
+  bottom: 2%;
+}
+.fa-facebook-f {
+  margin-left: 2850px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+.fa-twitter {
+  margin-left: 2850px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+.fa-instagram {
+  margin-left: 2850px;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+.fa-youtube {
+  margin-left: 2850px;
+  padding-bottom: 15px;
+}
+i {
+  padding: 10px;
+}
+.fa-instagram:hover {
+  color: rgb(213, 59, 203);
+  transform: scale(2);
+}
+.fa-facebook-f:hover {
+  color: #3b5998;
+  transform: scale(2);
+}
+.fa-twitter:hover {
+  color: #00acee;
+  transform: scale(2);
+}
+.fa-youtube:hover {
+  color: #c4302b;
+  transform: scale(2);
+}
+.p {
+  font-size: larger;
+  font-weight: 30px;
+}
+.wrapper {
+  width: 100%;
+  margin: 5px auto;
+}
+h4 {
+  text-align: center;
+}
+.cards_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards_wrap .card_item {
+  width: 30%;
+  padding: 10px;
+}
+
+.cards_wrap .card_inner {
+  background: linear-gradient(110deg,#ff99ff, #33ccff);
+  border: 3px solid whitesmoke;
+}
+
+.cards_wrap .card_top {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 0;
+}
+
+.cards_wrap .card_bottom {
+  padding: 15px;
+}
+
+.cards_wrap .card_bottom .card_category {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cards_wrap .card_bottom .card_info {
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid#000000;
+}
+
+.cards_wrap .card_bottom .card_info .title {
+  color: #070707e3;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin-bottom: 2px;
+  margin-top: -3px;
+}
+.cards_wrap .card_bottom  {
+  text-align: center;
+}
+.submit-btn{
+    color: #fff;
+    height: 40px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px currentColor rgba(193, 182, 197, 0.211);
+    background-image: #fff;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+.submit-btn:hover{
+    background: linear-gradient(140deg, #ccffff, #ffcccc);
+    color: #050801;
+    box-shadow: 0 0 5px #ccffff,
+                0 0 10px #ccffff,
+                0 0 20px #ffcccc,
+                0 0 40px #ffcccc;
+}
+
+@media (max-width: 1024px) {
+  .cards_wrap .card_item {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards_wrap .card_item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 528px) {
+  .cards_wrap .card_item {
+    width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <ul>
+            <li><a href="#">India </a><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <li><a href="#">English </a><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <li><a href="#">Messages </a><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <h5>Free shipping on order above 1499</h5>
+        </ul>
+    </div>
+    <div class="sub-box">
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Promotions</a></li>
+            <li><a href="#"> Offerzone </a></li>
+            <li><a href="#"> Contact </a></li>
+        </ol>
+    </div>
+    <div class="icons">
+        <h2>Fashion<font>World</font></h2>
+        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+        <div class="logo">
+        <img src="/images/fw.png" width="125" height="50">
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a href="#" class="fb" style="color:white"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+        <a href="#" class="tw" style="color:white"><i class="fa-brands fa-twitter fa-xl"></i></a>
+        <a href="#" class="in" style="color:white"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="#" class="yt" style="color:white"><i class="fa-brands fa-youtube fa-xl"></i></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="cards_wrap">
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/men.jpg" width="96%" display="block" height="100%">
+              </div>
+              <div class="card_bottom">
+                <div class="card_info" style="text-align:center">
+                  <h4 class="title">Mens Fashion</h4>
+                  <p>
+                    Keep it simple  but significant.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/women.jpg" width="96%" display="block" height="100%" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Womens Fashion</h4>
+                  <p>
+                    Life is a party ,dress like it.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item" >
+            <div class="card_inner">
+              <div class="card_top" >
+                <img src="/images/kids.jpg" width="96%" display="block" height="287px" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Kids Fashion</h4>
+                  <p>
+                    Let our future  be stylish.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/jb1.jpg" width="96%" display="block" height="100%" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Just born</h4>
+                  <p>
+                    Baby cloths make everything  perfect.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a class="bot" href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/accessories.jpg" width="96%" display="block" height="295px" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Fashion Accessories</h4>
+                  <p>
+                    Styling is all about accessories.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/summer.jpg" width="96%" display="block" height="294px" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Summer wear</h4>
+                  <p>
+                    Dress up for a party called " SUMMER"!
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/winter.jpg" width="96%" display="block" height="100%" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Winter wear</h4>
+                  <p>
+                    Hating the cold,but loving the winter clothes.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/foot1.jpg" width="96%" display="block" height="282px" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Foot wear</h4>
+                  <p>
+                    Shoe speak louder than words.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_inner">
+              <div class="card_top">
+                <img src="/images/traditional.jpg" width="96%" display="block" height="282px" >
+              </div>
+              <div class="card_bottom">
+                <div class="card_info">
+                  <h4 class="title">Traditional</h4>
+                  <p>
+                    So much pride , joy and comfort.
+                  </p><br>
+                  <button type="submit" class="submit-btn" ><a href="#" style="font-size:16px">Shop with Chat-bot</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+</body>
+</html>
